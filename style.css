@@ -5,13 +5,13 @@
 }
 body{
   font-family: "Amatic SC", sans-serif;
-  background-color: red;
+  /* background-color: red; */
 }
 .top-bar{
   height: 70px;
   /* border:  1px solid red; */
   background-color: rgba(0, 0, 0, 0.418);
-  opacity: 0.60;
+  opacity: 0.70;
   position: fixed;
   width: 100%;
   top: 0;
@@ -30,6 +30,7 @@ body{
   background-color: black;
   color: white;
   position: absolute;
+  font-size: 24px;
   padding: 6px;
   bottom: 12px;
   left: 12px;
@@ -84,9 +85,70 @@ body{
   align-items: center;  /* Center text vertically */
   height: 100%;  /* Make the anchor tag take up the full height */
   padding: 0 20px;  /* Add some horizontal padding for better aesthetics */
+  transition: background-color 0.3s ease;
+  transition: font-weight 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .bar-item a:hover {
+  font-weight: bold;
   color: black;
   background-color: #ccc;  /* This will now cover the full height of the parent container */
+}
+.menu-container{
+  /* height: 100vh; */
+  width: 100%;
+;
+  /* max-width: 980px; */
+}
+.menu-heading h1{
+
+  font-size: 50px;
+
+}
+
+.menu-tab{
+  border: 1px solid #616161;
+  min-width: 200px;
+  max-width: 980px;
+}
+.tabs{
+  display: flex;
+  justify-content: space-around;
+}
+.mytab{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: none;
+  font-size: 30px;
+  transition: background-color 0.3s ease;
+}
+.mytab.myActive {
+  background-color: rgb(240, 27, 27);
+}
+.mytab:hover{
+  font-weight: bold;
+  background-color: rgb(172, 17, 17);
+}
+.tabData{
+  display: none;
+}
+.tabData.myActive {
+  display: block;
+}
+.tabData p{
+  color: #616161;
+}
+.price-tag{
+  background-color: grey;
+  border-radius: 5px;
+  padding: 3px 6px;
+  color: white;
+  margin-right: 10px;
+}
+.myHr{
+  background-color: #616161;
+  height: 2px;
 }
