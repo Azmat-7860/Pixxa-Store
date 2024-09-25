@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Amatic SC", sans-serif;
+  background-color: red;
+}
+.top-bar{
+  height: 70px;
+  /* border:  1px solid red; */
+  background-color: rgba(0, 0, 0, 0.418);
+  opacity: 0.60;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 11;
+}
+.home-container{
+  background-image: url(images/pizza.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  filter: grayscale(50%);
+}
+.leftButtom{
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding: 6px;
+  bottom: 12px;
+  left: 12px;
+}
+.mid-sectiton{
+  /* border: 1px solid red; */
+  position: absolute;
+  text-align: center;
+  width: 303px;
+/* this is used for center the div  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mid-sectiton span{
+  color: white;
+  font-size: 100px;
+  font-weight: 600;
+}
+.menu-button{
+  background-color: black;
+  height: 50px;
+  /* display: block; */
+  min-width: 100px;
+  max-width: 300px;
+  text-align: center;
+  margin: 20px 0;
+}
+.menu-button a {
+  color: white;
+  text-decoration: none;
+ 
+  font-size: 36px;
+  font-weight: 500;
+}
+.bar-item {
+  height: 100%; /* This should be set to a specific value or depend on the parent */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* padding-left: ; */
+}
+
+.bar-item a {
+  /* margin: 8px 17px; */
+  
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;  /* Change from block to flex to allow full height */
+  align-items: center;  /* Center text vertically */
+  height: 100%;  /* Make the anchor tag take up the full height */
+  padding: 0 20px;  /* Add some horizontal padding for better aesthetics */
+}
+
+.bar-item a:hover {
+  color: black;
+  background-color: #ccc;  /* This will now cover the full height of the parent container */
+}
