@@ -41,10 +41,10 @@ window.addEventListener('scroll', function() {
 
     if (currentScroll > lastScrollTop) {
         // Scrolling down
-        rotationDegree += 10; // Increase rotation by 90 degrees
+        rotationDegree += 5; // Increase rotation by 90 degrees
     } else {
         // Scrolling up
-        rotationDegree -= 10; // Decrease rotation by 90 degrees
+        rotationDegree -= 5; // Decrease rotation by 90 degrees
     }
 
     // Apply the rotation to the barIcon

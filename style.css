@@ -34,12 +34,8 @@ body{
 .bar-icon {
   position: relative;
   left: 10px;
-    top: 33px;
+  top: 33px;
   margin-left: 20px; 
-  /* background-image: url(images/images.png);
-  background-repeat: no-repeat; 
-  background-position: center; 
-  background-size: contain;  */
   height: 65px; 
   width: 65px; 
   border-radius: 50%;
