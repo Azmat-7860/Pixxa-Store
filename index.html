@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg top-bar p-0">
       <div class="container-fluid">
-        <div class="bar-icon"></div>
+        <div class="bar-icon" id="barIcon"></div>
         <button
           class="navbar-toggler"
           type="button"
@@ -216,11 +216,68 @@
         </div>
       </div>
     </section>
+    <section class="store-map">
+      <img src="images/map.jpg" class="img-fluid" alt="" />
+    </section>
+    <section id="about" class="contact-container py-5">
+      <div class="main-container m-auto px-3">
+        <div class="text-white menu-heading text-center">
+          <h1 class="mb-5">about</h1>
+        </div>
+        <p class="text-white">
+          Find us at some address at some place or call us at 05050515-122330
+        </p>
+        <p class="text-white">
+          <span class="badge text-bg-dark fs-6">fyi</span>
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the
+          biggerst criteria of them all, both look and taste.
+        </p>
+        <p class="text-white fs-3">
+          <b>reserve!</b> a table, ask for today's special or just send us a
+          message:
+        </p>
+        <form id="bookingForm" onsubmit="return false;">
+          <input class="input-area" type="text" placeholder="Name" required />
+          <input class="input-area" type="number" placeholder="How many people" required />
+          <input class="input-area" type="datetime-local" required style="padding-right: 10px;"/>
+          <input class="input-area" type="text" placeholder="Message / Special requirements" required />
+          <button type="submit" class="input-area">SEND MESSAGE</button>
+      </form>
+  </div>
+  
+  <!-- Modal Structure -->
+  <div class="modal fade" id="modalSheet" style="font-size: 20px;" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4 shadow">
+              <div class="modal-header border-bottom-0">
+                  <h1 class="modal-title fs-5" id="modalLabel"><b>Booking Confirmation</b></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body py-0">
+                  <p id="modalMessage"></p>
+              </div>
+              <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                  <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Done</button>
+              </div>
+          </div>
+      </div>
+  </div>
+      </div>
+    </section>
+   
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script>
+    
+  </script>
   <script src="script.js"></script>
 </html>
